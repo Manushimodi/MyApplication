@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <array name="spinner">
+        <item>manushi</item>
+        <item>divya</item>
+        <item>asdfghjkl</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string1">helllo goa!</string>
+    <string name="string2">helllllo</string>
 </resources>

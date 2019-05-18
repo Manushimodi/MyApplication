@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main2.*
 import android.app.ProgressDialog
-
+import android.os.Handler
 
 
 class Main2Activity : AppCompatActivity() {
@@ -17,6 +17,11 @@ class Main2Activity : AppCompatActivity() {
             var number =Integer.parseInt(et_number_main2activity.text.toString())
             var time = Integer.parseInt(et_timer_main2activity.text.toString())
             asynctask().execute()
+
+
+            Handler().postDelayed(Runnable {
+
+            },3000)
 
 
         }

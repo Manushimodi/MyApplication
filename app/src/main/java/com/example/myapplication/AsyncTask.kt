@@ -21,18 +21,6 @@ class AsyncTask : AppCompatActivity() {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     inner class asynctask:AsyncTask<String, Int, Void>(){
         var count=0;
          override fun onPreExecute() {

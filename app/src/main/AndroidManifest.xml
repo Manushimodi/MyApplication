@@ -4,6 +4,13 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE">
+    </uses-permission-sdk-23>
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
             android:allowBackup="true"
@@ -12,19 +19,45 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity">
-
+        <activity android:name=".okclientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".AsyncTask">
+        <activity android:name=".OkhttpActivity">
 
         </activity>
+        <activity android:name=".PracticeRecycle">
+        </activity>
+        <activity android:name=".Main4Activity">
+        </activity>
+        <activity android:name=".gesterActivity">
+        </activity>
+        <activity android:name=".RuntimeActivity">
+        </activity>
+        <activity android:name=".AnimationActivity">
+        </activity>
+        <activity android:name=".ImagebuttonActivity">
+        </activity>
+        <activity android:name=".CheckBoxActivity">
+        </activity>
+        <activity
+                android:name=".SpinnerActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".RecycleActivity">
+        </activity>
+        <activity android:name=".ListActivity">
+        </activity>
+        <activity android:name=".Main3Activity">
+        </activity>
+        <activity android:name=".Main2Activity">
+        </activity>
+        <activity android:name=".AsyncTask">
+        </activity>
         <activity android:name=".MainActivity">
-
         </activity>
     </application>
 
