@@ -24,7 +24,6 @@ class okclientActivity : AppCompatActivity() {
         var lmanager : LinearLayoutManager = LinearLayoutManager(context)
         rv_okhttprecycleview.layoutManager = lmanager
 
-
         var client = OkHttpClient()
         var request = Request.Builder().url("http://dummy.restapiexample.com/api/v1/employees").build()
 

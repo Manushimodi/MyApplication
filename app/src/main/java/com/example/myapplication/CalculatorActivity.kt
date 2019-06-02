@@ -8,5 +8,6 @@ class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
+        setSupportActionBar(findViewById(R.id.toolbar))
     }
 }

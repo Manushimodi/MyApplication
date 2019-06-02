@@ -7,7 +7,7 @@ import android.view.ViewGroup
 
 class okhttpAdapter(arrayList: ArrayList<jsonmodel>,context: Context ):RecyclerView.Adapter<okhttpviewholder>(){
    var data = arrayList
-    var context = context
+   var context = context
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): okhttpviewholder {
         var layoutInflater : LayoutInflater = LayoutInflater.from(context)

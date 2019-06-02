@@ -1,6 +1,8 @@
 package com.example.myapplication
 
-class jsonmodel(){
+import java.io.Serializable
+
+class jsonmodel() :Serializable{
 
 
     var id:Int = 0
