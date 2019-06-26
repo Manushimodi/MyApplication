@@ -68,34 +68,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:weightSum="5">
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="0dp"
-                      android:gravity="right"
-                      android:orientation="vertical"
-                      android:layout_margin="10dp"
-                      android:layout_weight="0.8">
 
-            <TextView
 
-                    android:textSize="20sp"
-                    android:text="10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_calcyreccleview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
 
-            <TextView
-
-                    android:textSize="20sp"
-                    android:text="+20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:textSize="20sp"
-                    android:text="=30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-        </LinearLayout>
+        </android.support.v7.widget.RecyclerView>
         <TextView
                 android:textSize="20sp"
                 android:text="------------------------------------------------"
@@ -111,22 +92,24 @@
                       android:layout_weight="0.8">
 
             <TextView
-
+                    android:id="@+id/tv_num1"
                     android:textSize="20sp"
-                    android:text="30"
+                    android:onClick="num1_click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <TextView
-
+                    android:id="@+id/tv_num2"
+                    android:onClick="num2_click"
                     android:textSize="20sp"
-                    android:text="*30"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <TextView
-                    android:textSize="40sp"
-                    android:text="=900"
+                    android:id="@+id/tv_ans1"
+                    android:textSize="30sp"
+                    android:onClick="ans1_click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -146,33 +129,42 @@
                           android:layout_weight="1">
 
                 <TextView
+                        android:id="@+id/tv_cancel"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                           android:layout_height="match_parent"
                         android:text="C"
                         android:textColor="@android:color/holo_orange_dark"
                         android:gravity="center"
+                        android:onClick="cancel"
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_backarrow"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:drawableLeft="@drawable/ic_airplanemode_active_blue_24dp"
                         android:gravity="center"
+                        android:onClick="backspace"
+
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_module"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="%"
 
+                        android:onClick="modulo"
                         android:gravity="center"
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_devide"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="/"
+                        android:onClick="division"
                         android:gravity="center"
                         android:textSize="55sp"/>
             </LinearLayout>
@@ -183,21 +175,27 @@
                           android:layout_weight="1">
 
                 <TextView
+                        android:id="@+id/tv_seven"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="7"
+                        android:onClick="seven"
                         android:gravity="center"
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_eignt"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="8"
+                        android:onClick="eight"
                         android:gravity="center"
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_nine"
                         android:layout_weight="1"
+                        android:onClick="nine"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="9"
@@ -205,10 +203,12 @@
                         android:gravity="center"
                         android:textSize="55sp"/>
                 <TextView
+                        android:id="@+id/tv_multiplication"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="*"
+                        android:onClick="multiplication"
                         android:gravity="center"
                         android:textSize="55sp"/>
             </LinearLayout>
@@ -220,33 +220,47 @@
                                          android:layout_weight="1">
 
             <TextView
+                    android:id="@+id/tv_four"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="4"
+                    android:onClick="four"
                     android:gravity="center"
                     android:textSize="55sp"/>
+                <TextView
+                        android:id="@+id/tv_five"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:onClick="five"
+                        android:gravity="center"
+                        android:textSize="55sp"
+
+
+                        android:textColor="@color/redcolor"
+
+                />
             <TextView
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="5"
-                    android:gravity="center"
-                    android:textSize="55sp"/>
-            <TextView
+                    android:id="@+id/tv_six"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="6"
+                    android:onClick="six"
                     android:gravity="center"
                     android:textSize="55sp"/>
                 <!--android:background="@android:color/holo_orange_dark"-->
 
                 <TextView
-                    android:layout_weight="1"
+                        android:onClick="sub"
+                        android:id="@+id/tv_minus"
+                        android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="-"
+
                     android:gravity="center"
                     android:textSize="55sp"/>
         </LinearLayout>
@@ -258,28 +272,35 @@
                                      android:layout_weight="1">
 
             <TextView
+                    android:id="@+id/tv_one"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="1"
+                    android:onClick="one"
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:id="@+id/tv_two"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="2"
+                    android:onClick="two"
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:id="@+id/tv_three"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="3"
-
+                    android:onClick="three"
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:onClick="add"
+                    android:id="@+id/tv_plus"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -295,6 +316,7 @@
                                      android:layout_weight="1">
 
             <TextView
+                    android:id="@+id/tv_ac"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -302,13 +324,16 @@
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:id="@+id/tv_zero"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="0"
+                    android:onClick="zero"
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:id="@+id/tv_point"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -317,10 +342,13 @@
                     android:gravity="center"
                     android:textSize="55sp"/>
             <TextView
+                    android:onClick="equal"
+                    android:id="@+id/tv_equal"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="="
+
                     android:background="@android:color/holo_orange_dark"
                     android:gravity="center"
                     android:textSize="55sp"/>

@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_async_task.*
 import kotlinx.android.synthetic.main.activity_okhttp.*
 import android.R.string
 import android.widget.Toast
+import io.reactivex.Observer
 import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONObject
@@ -96,5 +97,20 @@ class OkhttpActivity : AppCompatActivity() {
         }
     }*/
 
+    fun getValidate(email:String,password:String,demo:Observer<String>){
+
+        if(email){
+            demo.onComplete()
+        }
+        password{
+
+        }
+
+
+    }
+
 }
+
+
+
 
